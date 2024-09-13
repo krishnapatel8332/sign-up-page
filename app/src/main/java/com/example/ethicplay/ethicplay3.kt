@@ -8,17 +8,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ethicplay2 : AppCompatActivity() {
+class ethicplay3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_ethicplay2)
+        setContentView(R.layout.activity_ethicplay3)
+        val create=findViewById<TextView>(R.id.create)
 
-        val signin=findViewById<TextView>(R.id.signin)
-         signin.setOnClickListener {
-             intent= Intent(applicationContext,ethicplay3::class.java)
-             startActivity(intent)
-         }
+        create.setOnClickListener {
+            intent= Intent(applicationContext,ethicplay2::class.java)
+            startActivity(intent)
+        }
 
     }
 }

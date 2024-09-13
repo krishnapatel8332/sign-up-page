@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:orientation="vertical"
     android:background="@drawable/gradient1"
-    android:layout_marginLeft="0dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ethicplay2">
@@ -14,7 +13,7 @@
         android:layout_height="60dp"
         android:text="@string/hello"
         android:textSize="50sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:paddingStart="15dp"
         android:textColor="#d55560"
         android:textStyle="bold"
@@ -32,8 +31,10 @@
         android:layout_width="match_parent"
        android:paddingHorizontal="15dp"
         android:layout_marginTop="5dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
+        android:gravity="center"
         android:textStyle="bold"
+        android:textSize="15sp"
         android:text="Create an account to unlock exclusive benefits and take your gaming experience to next level ! "
         />
     <com.google.android.material.textfield.TextInputLayout
@@ -84,6 +85,7 @@
         android:layout_marginTop="25dp"
         android:layout_height="60dp"
         android:text="Sign up"
+        android:textStyle="bold"
         android:backgroundTint="#d3393c"
        android:layout_marginHorizontal="15dp"/>
     <LinearLayout
@@ -138,18 +140,19 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="60dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Already have an account?"
             android:textSize="18sp"
-            android:layout_marginLeft="60dp"
             android:textColor="#6D6B6B"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Sign in"
+            android:id="@+id/signin"
             android:textSize="18sp"
             android:layout_marginLeft="5dp"
             android:textStyle="bold"
