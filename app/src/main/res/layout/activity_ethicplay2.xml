@@ -13,7 +13,7 @@
         android:layout_height="60dp"
         android:text="@string/hello"
         android:textSize="50sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="12dp"
         android:paddingStart="15dp"
         android:textColor="#d55560"
         android:textStyle="bold"
@@ -30,13 +30,25 @@
     <TextView
         android:layout_width="match_parent"
        android:paddingHorizontal="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_height="60dp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="15sp"
         android:text="Create an account to unlock exclusive benefits and take your gaming experience to next level ! "
         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:hint="Your name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
@@ -48,6 +60,8 @@
             android:textColor="@color/black"
             android:drawableStart="@drawable/baseline_mail_outline_24"
             android:hint="@string/enter_your_mail_phone_number"/>
+
+
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -80,9 +94,34 @@
             android:hint="Re-type password"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="18dp"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your sports: "
+            android:padding="4dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:id="@+id/spinner"
+            android:entries="@array/sports_array"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
     <Button
         android:layout_width="match_parent"
-        android:layout_marginTop="25dp"
         android:layout_height="60dp"
         android:text="Sign up"
         android:textStyle="bold"
@@ -110,32 +149,7 @@
             android:layout_marginHorizontal="20dp"
             android:background="#B6B1B1"/>
     </LinearLayout>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="60dp"
-        app:cardBackgroundColor="#EBE9E9"
-        app:cardCornerRadius="50dp"
-        android:layout_marginHorizontal="15dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_marginStart="70dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/google"/>
-           <TextView
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:layout_marginTop="15dp"
-               android:textStyle="bold"
-               android:textSize="20sp"
-               android:text="sign up using Google"
-               />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"

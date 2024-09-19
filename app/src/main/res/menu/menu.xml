@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home_svgrepo_com"
+        android:title="Home"/>
+    <item
+        android:id="@+id/article"
+        android:enabled="true"
+        android:icon="@drawable/article_svgrepo_com"
+        android:title="Articles"/>
+
+    <item
+        android:id="@+id/game"
+        android:enabled="true"
+        android:icon="@drawable/game_8_svgrepo_com"
+        android:title="Games"/>
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/user_avatar_profile_svgrepo_com"
+        android:title="Profile"/>
+
+
+</menu>

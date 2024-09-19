@@ -1,6 +1,16 @@
 <resources>
-    <string name="app_name">ethicplay</string>
+    <string name="app_name">ethicPlay</string>
     <string name="hello">Hello</string>
     <string name="there">there</string>
-    <string name="enter_your_mail_phone_number">Enter your mail/phone number</string>
+    <string name="enter_your_mail_phone_number">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sports_array">
+        <item>Cycling</item>
+        <item>Swimming</item>
+        <item>Weightlifting</item>
+        <item>Track and Field</item>
+        <item>Bodybuilding</item>
+    </string-array>
 </resources>
