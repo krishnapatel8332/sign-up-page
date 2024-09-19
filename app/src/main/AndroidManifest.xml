@@ -15,6 +15,7 @@
 
 
 
+
         <activity
             android:name=".QuizActivity"
             android:exported="false">
@@ -28,6 +29,23 @@
         <activity
             android:name=".ethicplay3"
             android:exported="true" >
+
+        <activity
+            android:name=".ethicplay5"
+            android:exported="false" />
+        <activity
+            android:name=".ethicplay4"
+            android:exported="false" />
+        <activity
+            android:name=".ethicplay3"
+            android:exported="false" />
+        <activity
+            android:name=".ethicplay2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
